@@ -1,0 +1,35 @@
+{
+  "name": "test-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/demiurge-repo/test-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/demiurge-repo/test-app/issues"
+  },
+  "homepage": "https://github.com/demiurge-repo/test-app#readme",
+  "envDependencies": {
+    "api": {
+      "_": "api-prod",
+      "development": "api-dev",
+      "test": "api-test"
+    }
+  },
+  "dependencies": {
+    "api-dev": "https://github.com/demiurge-repo/api/tarball/dev",
+    "api-prod": "https://github.com/demiurge-repo/api/tarball/master",
+    "api-qa": "https://github.com/demiurge-repo/api/tarball/qa",
+    "env-dep": "^0.1.0",
+    "express": "^4.17.1",
+    "git-env": "^0.1.0"
+  }
+}
